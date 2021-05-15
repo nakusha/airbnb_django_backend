@@ -9,3 +9,8 @@
 > > pip uninstall pipenv
 > > pip install pipenv
 > > 하면됨
+
+## pipenv 설정 후 작업
+
+> pipenv --three (Python3 환경설정으로 초기화)
+> pipenv shell 로 버블안으로들어간다.(페키지를 프로젝트에만 설치하기 위하여)

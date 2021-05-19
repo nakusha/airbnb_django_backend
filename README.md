@@ -38,3 +38,22 @@
 ### Application이란 함수들의 집합
 
 > django-admin startapp (Application 이름) 로 application을생성할 수 있음
+
+## 서버 실행법
+
+> pipenv shell(bubble로 접속)  
+> python manage.py makemigrations  
+> python manage.py mirations  
+> python manage.py runserver
+
+## Admin에 값추가
+
+> 각 applications에 admin에 model register
+> usermodel로 만들기
+> 모델이 추가하고싶은 값 추가(https://docs.djangoproject.com/en/3.2/ref/models/fields/)
+> makemigrations > migrate
+> admin패널에서 확인가능
+
+### Django Admin Model
+
+> https://docs.djangoproject.com/en/3.2/ref/contrib/admin/

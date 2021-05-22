@@ -58,6 +58,16 @@
 
 > https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
 
+### MetaClass
+
+> https://docs.djangoproject.com/en/3.2/ref/models/options/#ordering
+> abstract 설정  
+> django_admin에 이름 수정
+>
+> > verbose_name = 단수형이름
+> > verbose_name_plural = 복수형이름
+> > ordering = 정렬순서
+
 ## Core Apps 만들기(Common)
 
 > django-admin startapp core  

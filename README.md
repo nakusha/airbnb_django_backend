@@ -57,3 +57,8 @@
 ### Django Admin Model
 
 > https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
+
+## Core Apps 만들기(Common)
+
+> django-admin startapp core  
+> Core모델은 DB에저장하는게 아니고 상속받아서 사용할 것이기 때문에 DB에 넣지 말아야한다. -> Meta Class만들어야한다.

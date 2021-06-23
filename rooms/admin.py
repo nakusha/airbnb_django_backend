@@ -30,6 +30,7 @@ class RoomAdmin(admin.ModelAdmin):
         ("Last Details", {"fields": ("host",)}),
     )
 
+    # ordering = ("name", "price")
     list_display = (
         "name",
         "country",
@@ -43,6 +44,7 @@ class RoomAdmin(admin.ModelAdmin):
         "check_in",
         "check_out",
         "instant_book",
+        "count_amenities",
     )
     list_filter = (
         "host__superhost",
@@ -60,6 +62,14 @@ class RoomAdmin(admin.ModelAdmin):
         "facilities",
         "house_rule",
     )
+
+    # self=admin class/ object=선택된 줄
+    def count_amenities(self, object):
+        print(object.amenities.all())
+        return "count"
+
+    # 이름 수정
+    count_amenities.short_description = "short desc"
 
 
 @admin.register(models.Photo)

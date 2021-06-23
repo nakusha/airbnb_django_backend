@@ -10,7 +10,7 @@
 > > pip uninstall virtualenv  
 > > pip uninstall pipenv  
 > > pip install pipenv  
-> > 하면됨  
+> > 하면됨
 
 ### pipenv 설정 후 작업
 
@@ -24,6 +24,7 @@
 
 ### Linter 설정(flake8)
 
+> pipenv install flake8 --dev --pre
 > ctrl+shift+p > select linter검색 flake8선택 후 설치
 
 ### Formatter 설정(우측하단에 자동으로 뜨면 해당 설정으로사용)
@@ -33,13 +34,12 @@
 
 ### 언어별 Formatter셋팅 setting.json에 직접들어가서 수정해야된다.(언어별 설정)
 
-
 ## Create Application in Django
 
 ### Application이란 함수들의 집합
 
 > django-admin startapp (Application 이름) 로 application을생성할 수 있음  
-> 생성된 applictaion은 config/settings.py에 등록해줘야함  
+> 생성된 applictaion은 config/settings.py에 등록해줘야함
 
 ## 서버 실행법
 
@@ -47,7 +47,7 @@
 > python manage.py makemigrations  
 > python manage.py migrate  
 > python manage.py runserver
-> python manage.py createsuperuser <-django admin사용을 위한 super user만들기  
+> python manage.py createsuperuser <-django admin사용을 위한 super user만들기
 
 ## Admin에 값추가
 

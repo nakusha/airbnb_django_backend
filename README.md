@@ -75,3 +75,9 @@
 
 > django-admin startapp core  
 > Core모델은 DB에저장하는게 아니고 상속받아서 사용할 것이기 때문에 DB에 넣지 말아야한다. -> Meta Class만들어야한다.
+
+## pipenv python shell 사용하기
+
+> pipenv shell  
+> python3 manage.py shell  
+> 접속하면 장고에있는 모델을 사용 할 수 있다.

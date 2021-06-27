@@ -65,11 +65,10 @@ class RoomAdmin(admin.ModelAdmin):
 
     # self=admin class/ object=선택된 줄
     def count_amenities(self, object):
-        print(object.amenities.all())
-        return "count"
+        return object.amenities.count()
 
     # 이름 수정
-    count_amenities.short_description = "short desc"
+    count_amenities.short_description = "Count Amenities"
 
 
 @admin.register(models.Photo)

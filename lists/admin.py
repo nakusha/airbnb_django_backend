@@ -6,4 +6,9 @@ from . import models
 class ListAdmin(admin.ModelAdmin):
     """List Admin Definition"""
 
-    pass
+    list_display = ("name", "user", "count_rooms")
+
+    # start with
+    search_fields = ("name",)
+
+    filter_horizontal = ("rooms",)

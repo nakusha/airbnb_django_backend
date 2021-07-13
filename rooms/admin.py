@@ -6,7 +6,13 @@ from . import models
 class ItemAdmin(admin.ModelAdmin):
     """Item Admin Definition"""
 
-    pass
+    list_display = (
+        "name",
+        "used_by",
+    )
+
+    def used_by(self, object):
+        return object.rooms.count()
 
 
 @admin.register(models.Room)
@@ -45,6 +51,8 @@ class RoomAdmin(admin.ModelAdmin):
         "check_out",
         "instant_book",
         "count_amenities",
+        "count_photos",
+        "total_rating",
     )
     list_filter = (
         "host__superhost",
@@ -66,6 +74,9 @@ class RoomAdmin(admin.ModelAdmin):
     # self=admin class/ object=선택된 줄
     def count_amenities(self, object):
         return object.amenities.count()
+
+    def count_photos(self, object):
+        return object.photos.count()
 
     # 이름 수정
     count_amenities.short_description = "Count Amenities"

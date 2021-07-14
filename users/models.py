@@ -29,7 +29,7 @@ class User(AbstractUser):
     CURRENCY_CHOICES = ((CURRENCY_USE, "USD"), (CURRENCY_KRW, "KRW"))
 
     # https://docs.djangoproject.com/en/3.2/ref/models/fields/
-    avatar = models.ImageField(blank=True)
+    avatar = models.ImageField(upload_to="avatars", blank=True)
     # single line textInput
     # choices를 이용하여 select박스로 수정 가능
     gender = models.CharField(choices=GENDER_CHOICES, max_length=10, blank=True)

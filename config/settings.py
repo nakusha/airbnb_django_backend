@@ -144,4 +144,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "users.User"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
-print(MEDIA_ROOT)
+MEDIA_URL = "/media/"

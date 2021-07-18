@@ -28,7 +28,7 @@ class Command(BaseCommand):
             room_models.Room,
             number,
             {
-                "name": seeder.faker.address(),
+                "name": lambda x: seeder.faker.address(),
                 "host": lambda x: random.choice(all_usser),
                 "room_type": lambda x: random.choice(room_types),
                 "price": lambda x: random.randint(10000, 30000),
